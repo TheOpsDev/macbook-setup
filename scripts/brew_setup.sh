@@ -95,7 +95,6 @@ else
     BREW_CASKS=("${ADDITIONAL_CASK_PACKAGES[@]}")
 fi
 
-show_banner
 box_out "STARTING INSTALL OF ${#BREW_PACKAGES[@]} BREW PACKAGES"
 install_brew_packages --silent "${BREW_PACKAGES[@]}"
 box_out "STARTING INSTALL OF ${#BREW_CASKS[@]} CASK PACKAGES"
