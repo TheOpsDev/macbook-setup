@@ -27,5 +27,6 @@ while [ "$1" != "" ];do
     shift
 done
 
+show_banner
 ./scripts/brew_setup.sh -d
 ./scripts/git_repo_setup.sh
