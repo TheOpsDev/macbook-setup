@@ -42,7 +42,7 @@ function install_brew_packages() {
 
     for PACKAGE in $@; do
         printf "\tInstalling %s\n" $PACKAGE
-        # "${BREW_CMD} install ${PACKAGE}"
+        ${BREW_CMD} install ${PACKAGE}
     done
 }
 
